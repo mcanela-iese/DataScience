@@ -56,7 +56,7 @@ A **tuple** is like a list, represented with parentheses instead of square brack
 
 `mytuple = ('Messi', 'Cristiano', 'Neymar', 'Coutinho')`
 
-A **dictionary** is like a set of **pairs key/value**. For instance, the following dictionary contains three features of an individual:
+A **dictionary** is a set of **pairs key/value**. For instance, the following dictionary contains three features of an individual:
 
 `mydict = {'name': 'Joan', 'gender': 'F', 'age': 32}`
 
