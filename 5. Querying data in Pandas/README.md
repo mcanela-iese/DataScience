@@ -2,7 +2,7 @@
 
 ### Sorting
 
-Pandas series can be sorted by the index or by the values, with the functions `sort_index` and `sort_values`, respectively. Both work for data frames, but, for the second one, you have to specify either the name of a column or a list of column names, which will then be used in the order that you write them.
+Pandas series can be sorted by the index or by the values, with the functions `sort_index` and `sort_values`, respectively. Both work for data frames, but, for the second one, you have to specify either the name of a column or a list of column names, which will then be used in the order that you wrote them.
 
 The argument `ascending` allows you to choose between ascending and descending ways. The default ordering (in Python as in other languages) is `ascending=True`.
 
