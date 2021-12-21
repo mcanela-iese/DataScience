@@ -1,4 +1,4 @@
-## Skills requested in Google job posts ##
+## Example - Skills requested in Google job posts ##
 
 # Importing the data #
 import pandas as pd

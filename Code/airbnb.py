@@ -1,4 +1,4 @@
-## Barcelona Airbnb listings ##
+## Example - Barcelona Airbnb listings ##
 
 # Importing the data #
 import pandas as pd

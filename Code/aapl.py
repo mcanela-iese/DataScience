@@ -1,4 +1,4 @@
-## Apple Inc. stock prices ##
+## Example - Apple Inc. stock prices ##
 
 # Importing the data #
 import pandas as pd
