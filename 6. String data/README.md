@@ -1,4 +1,4 @@
-# 6. String data in Pandas
+# 6. String data
 
 ### Pandas string functions
 
