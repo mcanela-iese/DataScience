@@ -37,4 +37,3 @@ Exploring data, we often use tables. They can be produced in various ways in Pan
 * `pivot_table` extracts a spreadsheet-style pivot table as a data frame. For a Pandas data frame `df`, the syntax is `pd.pivot_table(df, values=cname1, index=cname2)`. This returns a one-way table containing the average value of `cname1` for the groups defined by `cname2`. Instead of the average, you can get a different summary by adding an argument `aggfunc=fname`. With an additional argument `columns=cname3`, you get a two-way table. For two-way tables, it works the same as `crosstab`, but it only applies to columns from the same data frame.
 
 * `groupby` groups the rows of a data frame so that an aggregation function can be applied, extracting a SQL-like table as a data frame. For a Pandas data frame `df`, the syntax could be `df.groupby(by=cname).mean()`. This will return a data frame with the average value of the numeric columns of `df` for the groups defined by `cname`.
-
