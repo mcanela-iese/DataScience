@@ -20,23 +20,7 @@ At the business place, the data scientist takes care of the **data pipeline**, w
 
 * **Developing data products**, such as a recommendation system, a pricing algorithm or a fraud detection procedure. **Machine learning** techniques are typically used here.
 
-This short course is mainly concerned with the first three steps.
-
-### Other skills
-
-Besides the technical skills, two traits are appreciated in data scientists:
-
-* To be able to **ask the right questions**. This is harder to evaluate than specific skills, but essential. It involves **domain knowledge** and expertise, coupled with the ability to see the problem and the available data, and match up them. It also requires empathy, neglected in most technical education programs.
-
-* To be able to **communicate**, creating narratives around their work. They should understand how to integrate the results into a larger story, recognizing that, if their results are not leading to action, they are meaningless.
-
-### A/B types
-
-In a survey at Quora, Michael Hochster made a distinction which has made fortune. He distinguished between two types of data scientists:
-
-* **Type A** (analyst): focused on static data analysis. Essentially a statistician with coding skills. Similar to a statistician, but knows the practical details of working with data not taught in the statistics curriculum: data cleaning, methods for large data sets, visualization, domain knowledge, writing about data, and so on. Task example: business intelligence.
-
-* **Type B** (builder): focused on building data products and using data "in production". Essentially a software engineer with knowledge in machine learning and statistics. Also a very strong coder. Task example: recommendation systems.
+This course is mainly concerned with the first three steps.
 
 ### Data science in the computer
 
@@ -48,8 +32,8 @@ Users interact with data science software applications in three possible ways:
 
 * Visual programming, based on flow charts which are a graphical translation of code.
 
-This course are based on code. More specifically, it uses Python, which is, currently, one of the leading choices of data scientists, in fierce competition with R. About 15 years ago, data mining textbooks were using visual programming and/or menus in their examples, but, nowadays, almost all the data science textbooks are based on R or Python, and the examples include code.
+This course is based on code. More specifically, it uses Python, which is, currently, the leading choice of data scientists. About 15 years ago, data mining textbooks were using visual programming and/or menus in their examples, but, nowadays, most data science books are based on Python, and the examples include code.
 
 The majority of the data science tasks are performed on **structured data**, that is, on data sets in tabular form, with rows and columns. The rows correspond to the **samples**, which are typically individuals, companies or transactions, and the columns to **features**. The features are either **numeric** (eg price) or **categorical** (eg gender). Nevertheless, there are also methods for dealing with **string** (text) data and **datetimes**. Categorical features are managed with 1/0 valued **dummies** in many analyses.
 
-In Python, tabular data sets are typically managed as objects called **data frames**. Data frames were born in R, but have been adopted by other languages, like Python and Scala. Roughly speaking, a data frame is a collection of data (column) vectors, all of the same length. All the data points in the same column are of the same type, but the data frame can contain columns of different types.
+In Python, tabular data sets are typically managed as objects called **data frames**. Roughly speaking, a data frame is a collection of data (column) vectors, all of the same length. All the data points in the same column are of the same type, but the data frame can contain columns of different types.
