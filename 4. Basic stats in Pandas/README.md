@@ -16,7 +16,7 @@ Although defaults work in most cases satisfactorily, it is worth to comment a fe
 
 * `dtype` specifies the data types of the columns of the data frame. This saves a lot of time with big data sets. The default is `dtype=None`, which means that Python will guess the data type, based on what it reads. When all the entries in a column are numbers, that column is imported as numeric. If there is, at least, one entry that is not numeric, it is read as strings, and type `object` is assigned.
 
-* `encoding`. If the string data contained in a CSV file can contain special characters (such as ñ, or á), which can make trouble, you may need to control this. The default in Python is `encoding='utf-8'`. For instance, if you create a CSV file in Excel (in Western Europe), you will need to set `encoding='latin'` to read the special characters.
+* `encoding`. If the string data contained in a CSV file can contain special characters (such as ñ, or á), which can make trouble, you may need to control this. The default in Python is `encoding='utf-8'`. For instance, if you reading a CSV file created in Excel (in Western Europe), you will need to set `encoding='latin'` to read the special characters.
 
 ### Summary statistics
 
@@ -44,4 +44,4 @@ Suppose now that `s` is a numeric Pandas series. To explore the distribution of 
 
 * `s.plot.line()` returns a line plot.
 
-Pandas uses the Matplotlib functions, but this is not explicitly. If you are satisfied with a basic functionality, you can skip Matplotlib in your code. If you want to add labels, titles, or other features, you can import `matplotlib.pyplot` and add code lines for labels, title, legends, etc. 
+Pandas uses Matplotlib functions, but not explicitly. If you are satisfied with a basic functionality, you can skip Matplotlib in your code. If you want to add labels, titles, or other features, you can import `matplotlib.pyplot` and add code lines for labels, title, legends, etc.
