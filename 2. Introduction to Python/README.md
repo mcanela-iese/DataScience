@@ -2,21 +2,19 @@
 
 ### What is Python?
 
-**Python** is a programming language, introduced in 1991. The last version is Python 3.10. To work with Python, you will pick an interface among the many available choices. You can have several "instances" of Python, called **kernels**, running independently in your computer.
+**Python** is a programming language, introduced in 1991. The last version is Python 3.10. To work with Python, you will pick an interface to the Python interpreter among the many available choices. You can have several "instances" of the interpreter, called **kernels**, running independently in your computer.
 
 Warning: Python is **case sensitive**. So, `type` is a Python function which returns the type of an object, but `Type` is not recognized (unless you create a new function with this name), and will return an error message.
 
 ### The Anaconda distribution
 
-There are many distributions of Python. In the data science community, **Anaconda** (`anaconda.com`) is the favorite one. The current Anaconda distribution comes with Python 3.9. Downloading and installing Anaconda will leave you with the **Anaconda Navigator**, which opens in the browser and allows you to choose among different interfaces to the Python interpreter. Alternatively, you can bypass the navigator calling the interpreter in a **shell** application (such as *Command Prompt* in Windows, or *Terminal* in Mac).
+There are many distributions of Python. In the data science community, **Anaconda** (`anaconda.com`) is the favorite one. The current Anaconda distribution comes with Python 3.9. Downloading and installing Anaconda will leave you with the **Anaconda Navigator**, which opens in the browser and allows you to choose among different interfaces to the Python interpreter. Alternatively, you can bypass the navigator calling those interfaces in a **shell** application (such as *Command Prompt* in Windows, or *Terminal* in Mac).
 
 Among the many interfaces offered by Anaconda, I recommend you the **Jupyter Qt console**, which is an input/output text interface. Jupyter (Julia/Python/R) is a new name for an older project called **IPython** (Interactive Python). IPython's contribution was the IPython shell, which added some features to the mere Python language. The Qt console is the result of adding a graphical interface (GUI), with drop-down menus, mouse-clicking, etc, to the IPython shell, with a toolkit called Qt.
 
 Jupyter provides an alternative approach, based on the **notebook** concept. In a notebook, you can combine input, output and ordinary text. In the notebook arena, **Jupyter Notebook** is the leading choice, followed by **Apache Zeppelin**. Most data scientists prefer the console for developing their code, but use notebooks for difusion, specially for posting their work on platforms like GitHub.
 
-Besides the Jupyter tools, Anaconda also provides a Python IDE (Integrated Development Environment) called **Spyder**, where you can manage a console and an text editor for your code. If you have previous experience with this type of interface, for instance from working with R in RStudio, you may prefer Spyder to the QtConsole.
-
-Calling any of these apps will start a **Python kernel**, that is, an instance of a Python interpreter. You can then send commands to the interpreter.
+Besides the Jupyter tools, Anaconda also provides a Python IDE (Integrated Development Environment) called **Spyder**, where you can manage a console and an text editor for your code. If you have previous experience with this type of interface, for instance from working with R in RStudio, you may prefer Spyder to the QtConsole. Calling any of these apps will start a Python kernel. You can then send commands to the interpreter.
 
 ### Python packages
 
@@ -44,8 +42,6 @@ The **data types** in Python are similar to those of other languages. The type c
 
 * Besides numbers, we can also manage **strings**, with type `str`.
 
-* Python also has type `datetime` for dealing with **dates and times**.
-
 ### Data containers
 
 Python has various **data container** types. The most versatile is the **list**, which is represented as a sequence of comma-separated values inside square brackets:
@@ -72,7 +68,7 @@ A simple example of a user-defined function would be:
 
 `def f(x): return 1/(1 - x**2)`
 
-Longer definitions can involve several lines of code. In that case, all the lines after the colon must be *indented*. Jupyter interfaces create the indentation by themselves.
+Longer definitions can involve several lines of code. In that case, all the lines after the colon must be *indented*. Jupyter interfaces create the indentation automatically when we press the *Return* key after the colon.
 
 ### Loops and conditional logic
 
@@ -80,10 +76,10 @@ Longer definitions can involve several lines of code. In that case, all the line
 
 `inilist = [name[0] for name in mylist]`
 
-This would return `['M', 'C', 'N', 'C']`. Loops are much less frequent in the data science practice, because NumPy and Pandas provide **vectorized functions**, that, when applied to a data container such as a Pandas series, return a data container with same shape, whose terms are the values of the function on the corresponding terms of the original data container. Nevertheless, we may use occasionally a `for` loop in this course.
+This would return `['M', 'C', 'N', 'C']`. Loops are much less frequent in the data science practice, because NumPy and Pandas provide **vectorized functions**, that, when applied to a data container such as a Pandas series, return a data container with same shape, whose terms are the values of the function on the corresponding terms of the original data container. 
 
 Also ubiquitous in programming is **conditional logic**, operationalized through **if-then-else** commands. You also have this in Python. For instance, if you wish to create a dummy flag for names with more than 5 letters in the list `mylist`, you can do it with:
 
 `flaglist = [1 if len(name) > 5 else 0 for name in mylist]`
 
-This would return `[0, 1, 0, 1]`. It is also rare to find explicit if-the-else arguments in data science, since "vectorial" syntax is preferred (and typically leads to a faster execution).
+This would return `[0, 1, 0, 1]`. It is also less frequent to find explicit if-the-else arguments in data science, since "vectorial" syntax is preferred (and typically leads to a faster execution).
