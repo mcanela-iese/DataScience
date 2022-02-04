@@ -59,7 +59,6 @@ f(1)
 f('Mary')
 def g(x, y): return x*y/(x**2 + y**2)
 g(1, 1)
-f = lambda x: 1/(1 - x**2)
 
 # For loops #
 squares = []
