@@ -18,10 +18,8 @@ df['company'].value_counts()
 # Exploring the job title #
 len(df['title'].value_counts())
 df['title'].value_counts().head(10)
-mask1 = df['title'].str.contains('Intern')
-mask1.value_counts()
-mask1 = df['title'].apply(lambda x: 'Intern' in x)
-mask2 = ['Intern' in x for x in df['title']]
+mask = df['title'].str.contains('Intern')
+mask.value_counts()
 df['title'].str.contains('Sales').sum()
 df['title'].str.contains('Cloud').sum()
 df['title'].str.contains('Google Cloud').sum()
