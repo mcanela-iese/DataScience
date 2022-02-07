@@ -4,13 +4,15 @@
 
 **Web scraping** is concerned with extracting data from websites, in particular data that would be difficult to get on a large scale using traditional data collection methods. There is a whole industry built around web scraping, as it is used to track product price changes or discounts, to gather data from social profiles, to capture real estate listings, in search engine optimization (SEO), etc.
 
-Scraping a web page involves downloading the page and extracting data from it. Both things can be done with many languages, in particular with Python. There are also specialized web scraping software applications, such as **Octoparse**. This course covers only those pages that are rendered to the browser in a single step (explained below). Although we use in this course the package `lxml`, you can use other Python packages, such as Beautiful Soup (`bs4`) and Scrapy (`scrapy`).
+Scraping a web page involves downloading the page and extracting data from it. Both things can be done in many ways, in particular with Python tools. There are also specialized web scraping software applications, such as **Octoparse**. This course covers only those pages that are rendered to the browser in a single step (explained below). This course uses the Python packages Requests and Beautiful Soup (already introduced in the preceding chapter).
 
 ### HTML and the browser
 
-Suppose that your browser (let me assume that you use either Chrome or Firefox) is displaying a web page on the screen. You can get the source code of the page through the contextual menu that opens when right-clicking anywhere on the page. A new tab will open, displaying a HTML document. In most pages, this HTML document corresponds to the page that the browser displayed for you. These pages are the ones covered here. But not all pages are that simple. Some use a technology called **AJAX** (Asynchronous JavaScript And XML), which, in a few words, works as follows:
+Suppose that your browser (let me assume that you use either Chrome or Firefox) is displaying a web page on the screen. You can get the source code of the page through the contextual menu that opens when right-clicking anywhere on the page. A new tab will open, displaying a HTML document. In most pages, this HTML document corresponds to the page that the browser displayed for you. These pages are the ones covered here.
 
-1. The page corresponding to the URL that you have entered is loaded.
+But not all pages are that simple. Some use a technology called **AJAX** (Asynchronous JavaScript And XML) in two-step process as follows:
+
+1. The page corresponding to the URL that you enter is loaded.
 
 2. A JavaScript program creates a XMLHttpRequest object.
 
@@ -22,9 +24,9 @@ The problem is that neither the Python methods discussed in this course capture 
 
 ### The package Requests
 
-With Python, files can be downloaded from Internet sources in multiple ways. Many tutorials suggest using the package `urllib`, which is part of the Python Standard Library. More popular, nowadays, is the package Requests (`requests`), briefly introduced here. Requests comes with the Anaconda distribution, so you do not have to install it.
+With Python, files can be downloaded from Internet sources in multiple ways. Many tutorials suggest using the package `urllib`, which is part of the Python Standard Library. More popular, nowadays, is the package **Requests**, which comes with the Anaconda distribution.
 
-Let us refresh the context. You have probably noticed the string `'https'` (sometimes `'http'`) at the beginning of a URL. The **Hypertext Transfer Protocol** (HTTP) was designed to enable communications between clients and servers. For instance, a client (such as your browser) sends a **HTTP request** to the server. Then the server returns the response to the client. The response contains status information about the request and, if the request is accepted, the requested content.
+Let me refresh the context. You have probably noticed the string `'https'` (sometimes `'http'`) at the beginning of a URL. The **Hypertext Transfer Protocol** (HTTP) was designed to enable communications between clients and servers. For instance, a client (such as your browser) sends a **HTTP request** to the server. Then the server returns the response to the client. The response contains status information about the request and, if the request is accepted, the requested content.
 
 **GET** is one of the most common HTTP methods. It is used to request data from a specified resource. The function `requests.get` is a Python implementation of the GET request. You can manage this as follows.
 
