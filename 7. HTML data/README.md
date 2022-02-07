@@ -72,6 +72,6 @@ Once the interesting tags have been captured, the text enclosed in a tag can be 
 
 `tag.text`
 
-In certain cases, we are interested in an attribute value. Example: `a` tag whose attribute `href` contains a relevant link. This is extracted as
+In certain cases, we are interested in an attribute value. Example: `a` tag whose attribute `href` contains a relevant link. This is extracted as:
 
 `tag['href']`
