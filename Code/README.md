@@ -13,3 +13,6 @@
 * Example - Skills requested in Google job posts: `google.py`
 
 * Tutorial - Beautiful Soup: `bsoup.py`
+
+* Example - Netflix job postings: `netflix.py`
+
