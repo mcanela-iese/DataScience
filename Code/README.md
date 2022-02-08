@@ -11,3 +11,5 @@
 * Tutorial - String data in Python: `string.py`
 
 * Example - Skills requested in Google job posts: `google.py`
+
+* Tutorial - Beautiful Soup: `bsoup.py`
