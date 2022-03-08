@@ -28,11 +28,11 @@ NumPy also provides common **statistical functions**, such as `mean`, `max`, `su
 
 Slicing works in 1d arrays as in lists. For instance, `arr1[1:3]` would extract an array containing `'b'` and `'c'`. The same applies to 2d arrays, but we need two indexes within the square brackets. The first index selects the rows, and the second index the columns.
 
-Subarrays can also be extracted by means of expressions. For instance, the first row of `arr2` can be extracted with:
+Subarrays can also be extracted by means of expressions. For instance, 
 
 `arr2[arr2[:, 1] > 0, :]`
 
-This is easier to manage in Pandas data frames, where rows and columns have names, than in NumPy 2d arrays. So, there is more detail below.
+returns a subarray which contains the first row of `arr2`. This is easier to manage in Pandas data frames, where rows and columns have names, than in NumPy 2d arrays. So, there is more detail below.
 
 ### The package Pandas
 
