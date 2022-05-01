@@ -62,7 +62,7 @@ Data frames can be built directly, as in:
 
 `df = pd.DataFrame(arr2)`
 
-They can also be extracted from a data source (local or remote), such as a CSV file, an Excel sheet, or a table from a relational database. As for the series, a range index is automatically created unless an alternative definition is provided. The same is true for column names, so, in the above example, `df.columns` would return a range of integers. It is recommended to choose column names which are suggestive of the content of the column.
+They can also be extracted from a data source (local or remote), such as a CSV file, an Excel sheet, or a table from a relational database. As for the series, a range index is automatically created unless an alternative definition is provided. The same is true for column names, so, in the above example, `df.columns` would return a range of integers. It is recommended to choose a column name which suggest the content of the column.
 
 Columns can be extracted from a data frame by naming them:
 
