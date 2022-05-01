@@ -18,7 +18,7 @@ df['open'].plot(figsize=(10,6), color='gray');
 
 # Daily returns #
 df['return'] = 100*df['open'].pct_change()
-df['return'].head()
+df.head()
 df['return'].plot(figsize=(10,6), color='gray');
 df['return'].plot.hist(figsize=(8,6), color='gray', rwidth=0.98);
 
