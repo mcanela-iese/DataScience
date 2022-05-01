@@ -14,7 +14,7 @@ Three useful Pandas functions related to missing values, which can be applied to
 
 * `isna` returns a Boolean mask indicating which terms are missing.
 
-* `fillna` is used for **imputation**, that is, for replacing `NaN`'s by a fixed value, set by the user.
+* `fillna` is used for replacing `NaN`'s by a fixed value, set by the user.
 
 * `dropna` returns the same data frame minus the rows that contain at least one missing value. A list of columns can be specified, so the missing values are searched only for those columns.
 
