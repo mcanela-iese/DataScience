@@ -4,6 +4,8 @@
 2 + 2
 a = 2 + 2
 a
+a = 7 - 2
+a
 b = 2 * 3
 b - 1
 b**2
@@ -11,7 +13,7 @@ b**2
 # Python packages #
 import math
 math.sqrt(2)
-from math import *
+from math import sqrt
 sqrt(2)
 
 # Numeric types #
@@ -42,7 +44,7 @@ newlist = mylist + [2, 3]
 newlist
 len(newlist)
 mylist[0:2]
-mylist[3:]
+mylist[2:]
 mylist[:3]
 
 # Dictionaries #
@@ -53,7 +55,7 @@ my_dict['name']
 # Functions #
 def f(x):
     y = 1/(1 - x**2)
-    return(y)
+    return y
 f(2)
 f(1)
 f('Mary')
@@ -68,10 +70,6 @@ squares
 squares = [i**2 for i in range(1, 5)]
 squares
 [len(name) for name in mylist]
-fib = [1, 1]
-for i in range(2, 10):
-    fib = fib + [fib[i-1] + fib[i-2]]
-fib
 
 # If statements #
 if 3 < 5:
