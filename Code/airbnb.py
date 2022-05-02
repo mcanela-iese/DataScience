@@ -20,7 +20,7 @@ df['host_id'].unique().shape
 df['host_id'].value_counts().head(10)
 (df['host_id'].value_counts() > 10).mean().round(3)
 
-# Distribution of the price #
+# The distribution of the price #
 df['price'].plot.hist(figsize=(8,6), color='gray', rwidth=0.98);
 df['price'].describe()
 df['price'][(df['price'] >= 25) & (df['price'] <= 150)].plot.hist(figsize=(8,6),
