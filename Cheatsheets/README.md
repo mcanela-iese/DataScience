@@ -1,9 +1,9 @@
 # Cheatsheets
 
-## Cheatsheet - Lists
+### Cheatsheet - Lists
 
-## Cheatsheet - Pandas functions
+### Cheatsheet - Pandas functions
 
-## Cheatsheet - Strings
+### Cheatsheet - Strings
 
-## Cheatsheet - Regular expressions
+### Cheatsheet - Regular expressions
