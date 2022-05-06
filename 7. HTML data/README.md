@@ -46,7 +46,7 @@ The `a` tag has a special role. It marks a **hyperlink**, which is used to link 
 
 ### Beautiful Soup
 
-Suppose that a HTML document has been imported to your computer as the Python string `html_str`. How can we extract the pieces of information we are interested in? There are various approaches (not equally powerful) and no consensus about which is best, bout most practitioners agree that the simplest way to start is that of the package **Beautiful Soup**.
+Suppose that a HTML document has been imported to your computer as the Python string `html_str`. How can we extract the pieces of information we are interested in? There are various approaches (not equally powerful) and no consensus about which is best, but most practitioners agree that the simplest way to start is that of the package **Beautiful Soup**.
 
 You can install Beautiful Soup by entering in the shell (or in the Jupyter console):
 
